@@ -1,0 +1,15 @@
+
+
+public class Main
+{
+    static float Area(int r){
+        return 3.14f*r*r;
+    }
+    static int Area(int a, int b){
+        return a*b;
+    }
+	public static void main(String[] args) {
+		System.out.println("The area of circle:- "+Area(6));
+			System.out.println("The area of rectangle:- "+Area(6,4));
+	}
+}
