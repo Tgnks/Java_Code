@@ -1,0 +1,26 @@
+
+
+import java.util.Scanner; 
+
+
+public class Main
+{
+ static String userName(String email)
+{
+    int a= email.indexOf('@');
+    String name = email.substring(0, a);
+    return name;
+}
+
+	public static void main(String[] args) {
+	 
+	 Scanner email = new Scanner(System.in);
+	  System.out.println("Enter the email address:- " );
+	 String a= email.nextLine();
+	 
+	 System.out.println("User name is "+userName(a));
+	 
+	 
+	}
+
+}
