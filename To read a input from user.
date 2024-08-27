@@ -1,0 +1,13 @@
+//To read a input from user.
+//----------------------------------------
+import java.util.Scanner;
+//need to import this to make sure the scanner is working 
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		 
+		 int x= sc.nextInt();
+		 System.out.println(x);
+	}
+}
