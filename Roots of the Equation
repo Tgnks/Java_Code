@@ -1,0 +1,26 @@
+import java.util.Scanner;
+import static java.lang.Math.sqrt;
+public class Main
+{
+	public static void main(String[] args) {
+	    float a, b, c;
+	    double D, r1, r2;
+	    System.out.println("Enter all constants of the equaion - ");
+	    
+	    Scanner sc= new Scanner(System.in);
+	   a = sc.nextFloat();
+	   b = sc.nextFloat();
+	   c = sc.nextFloat();
+	   
+	   D= (b*b) - 4*a*c;
+	   if(D>=0){
+	        r1 = (-b+Math.sqrt(D))/(2*a);
+	       r2 = (-b-Math.sqrt(D))/(2*a);
+	       
+	       System.out.println("the roots of the equation are "+r1+" "+r2);
+	   }
+	   else{
+	       System.out.println("This equation will have unreal roots");
+	   }
+	}
+}
